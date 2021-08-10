@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap');
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+* {
+    /* font-family: 'Metropolis', sans-serif; */
+}
+:root {
+    --menu-fs:1.375rem;
+    --clr-white:#fff;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+ul { 
+    list-style : none;
+}
+body {
+    -webkit-font-smoothing: antialiased
+}
+.bg-w {
+    background-color: #fff;
+}
+.flex {
+    display: flex;
+}
+
+.clr_tran {
+    color: transparent;
+}
+
+.bg-tran {
+    /* background-color:rgba(255,255,255,.1); */
+    background-color: transparent;
+}
+
+.f-c-w {
+    color:#fff;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+.fx-jc-c {
+    justify-content: center;
+}
+.fx-jc-fs{
+    justify-content: flex-start;
+}
+.fx-jc-fe{
+    justify-content: flex-end;
+}
+.fx-ai-c{
+    align-items: center;
+}
+.fx-ai-fs{
+    align-items: flex-start;
+}
+.fx-ai-fe{
+    align-items: flex-end;
+}
+p {
+    font-family: 'Source Serif Pro', serif';
+    line-height: 1.5;
+}
+
+/* HEADER BACKGROUND CONTAINER STARTS HERE */
+
+header {
+    width:100%;
+    height: 100vh;
+}
+
+.bg-container{
+    position: relative;
+    width:100%;
+    height: 100%;
+    margin: 0 auto;
+    background: url(../images/bg.jpg);
+    background-size: 110%;
+    background-position: center center;
+    filter:grayscale(30%)
+}
+.bg-effect {
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.67) 80%,rgba(0,0,0,0.8) 95%);
+    z-index: 0;
+}
+
+/* NAV BAR START HERE */
+.bg-container .nav {
+    position: absolute;
+    top:50px;
+    left:20px;
+    width:95%
+}
+
+.nav > nav {
+    width:100%;
+    height:45px;
+}
+.nav .three-dot {
+    font-size: var(--menu-fs);
+}
+.nav nav .search {
+    margin-right: auto;
+    padding-left: 30px;
+    font-size: var(--menu-fs);
+}
+.nav > nav .logo {
+    width: 100px;
+    height: 45px;
+}
+.nav > nav .logo img {
+    width:100%;
+    height: 100%;
+    fill: white;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    fill:white;
+    color:white;
+    margin-left: auto;
+    /* padding-left: 20px; */
+}
+.avatar img {
+    width:100%;
+    height: 100%;
+}
+
+/* NAV BAR ENDS HERE */
+
+
+/* BACKGROUND CONTAINER CARD START HERE */
+
+.bg-container__card {
+    height: 100%;
+    padding-bottom: 30px; 
+    padding-left:50px;
+    position: relative;
+    z-index: 10;
+}
+
+.bg-container__card .bg-c__card_left {
+    /* padding-bottom: 30px; */
+    max-width: 100%;
+}
+
+.left__rls_date {
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 1.875rem;
+}
+
+.left__rls_date h4 {
+    font-size: 10px;
+    font-weight: 900;
+    padding: 5px 5px;
+    margin:0;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.left__rls_date .bottom {
+    padding: 12px;
+}
+.rls-date {
+    display: block;
+    font-weight: 900;
+    /* width: 100%; */
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    /* margin-bottom: 10px; */
+    padding:2px 0;
+
+    
+    
+}
+
+
+
+.left__rls_date div > p:nth-child(2) {
+    
+   /* padding-bottom:10px; */
+   padding: 10px 0;
+
+}
+
+
+
+
+.bg-container__card .bg-c__card_right {
+    /* padding-bottom: 30px; */
+    /* align-self: flex-start; */
+    margin-left:1rem;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.bg-c__card {
+    position: relative;
+    z-index: 100;
+}
+.bg-c__card_right .right__album_data {
+    padding: 5px;
+}
+
+.bg-c__card_right > .right__album_data > p {
+    
+    font-weight: 400;
+    font-size: .8rem;
+    margin:0;
+    /* margin-bottom: 10px; */
+    padding: 5px 5px 15px;
+}   
+
+.bg-c__card_right > .right__album_data > h1{
+    font-weight: 900;
+    font-size: 54px;
+    margin:0;
+    /* margin-bottom: 10px; */
+    /* padding-top: 5px; */
+    padding-bottom: 10px;
+    line-height: .8;
+}
+
+.bg-c__card_right > .right__album_data > h3{
+    font-weight: 900;
+    font-size: 36px;
+    margin:0;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.right__album_data span {
+    display: inline-block;
+    padding: 0 5px;
+}
+.btn {
+    padding:12px 25px;
+    border-radius: 25px;
+    margin:0 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    /* display: block;   */
+    letter-spacing: 1.2px;
+
+}
+.btn_primary {
+    background-color: rgb(251, 13, 27);
+}
+
+.btn-secondary {
+    background-color: #1DB954;
+}
+
+.bg-c__card_right > .right__album_data .fwd {
+    /* font-size: var(--menu-fs);
+    color: white;
+    fill:white;
+    background-color: black; */
+    /* width:45px;
+    height: 50px; */
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+/* BACKGROUND CONTAINER CARD ENDS HERE */
+
+
+/* section starts here */
+
+/* SECTION MUSIC DATA */
+
+.music-data{
+    width: 100%;
+    font-family: 'Source Serif Pro', serif !important;
+    padding: 50px 0;
+}
+
+.music-data .m-d-container {
+    margin: 0 auto;
+    max-width:900px;
+    /* text-align: center; */
+    
+}
+
+.music-data .m-card {
+    width: 125px;
+    height: 105px;
+    position: relative;    
+    font-family:"Font Awesome 5 Brands";  
+
+}
+
+
+.m-card .fa-plus {
+    position: absolute;
+    bottom:0px;
+    right:15px;
+    background-color: #1DB954;
+    padding:3px;
+    border-radius: 50%;
+    color: #fff;
+    border:3px solid #fff
+
+}  
+
+
+.music-data .m-card img {
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+
+
+.music-data .m-card__data { 
+    max-width: 90%;
+    margin-top:50px;
+    /* margin: 0 auto; */
+    
+
+}
+
+.music-data .m-card__data .m-card__title{
+    font-family: 'Source Serif Pro', serif !important;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+p.m-card__content {
+    margin-top: 20px;
+    font-family: 'Source Serif Pro', serif !important;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+p.m-card__footer {
+    margin: 30px 0;
+    font-family: 'Source Serif Pro', serif !important;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.music-available {
+    width: 900px;
+    margin: 0 auto;
+}
+.m-a__cover {
+    width:50%;
+    height: auto;
+    /* flex:1 ; */
+}
+
+.m-a__cover > img {
+    width: 100%;
+    display: block;
+}
+.m-a__available-on {
+    /* width:auto */
+    /* flex: 1; */
+    width:50%;
+    /* flex:1; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    
+
+}
+.m-a__available-on > a 
+ {
+    /* flex:1; */
+    /* width:100%; */
+    width: 100%;    
+    /* padding: 5px; */
+    white-space: nowrap;
+    text-align: center;
+    display: block;
+}
+
+.m-a__available-on > a > img {
+    border-top: .5px solid rgba(0,0,0,.1);
+}
+
+.m-a__available-on .spotify > img {
+    border:none;
+}
+
+.m-a__available-on > p {
+    width:100%;
+    display: block;
+    text-align: center;
+    font-family:'Montserrat', sans-serif; 
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    /* padding-bottom: 30px; */
+    margin-bottom:  35px;
+}
+.m-a__available-on > a > img {
+    max-width: 130px;
+    height:45px;
+  
+}
+
+.m-a__available-on .m-a-save ,
+.m-a__available-on .m-a-listen
+
+{
+    /* display: block; */
+    font-size: 1rem;
+    padding: 12px 5px;
+    width:60%;
+    /* height: 40px; */
+    text-align: center;
+    /* vertical-align: middle; */
+
+}
+
+.m-a__available-on .m-a-save {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* ALBUM SECTION */
+
+section.album{
+    width: 900px;
+    /* margin-top: 20px; */
+    margin: 20px auto 0 auto;   
+    color: #000;
+    /* height: 52px; */
+}
+
+.album .album__song{
+    display: flex;
+    /* width: 100%; */
+    /* justify-content: center; */
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.album__song .logo {
+    /* width: 100%; */
+    width: 50px;
+    /* height: 100%; */
+    /* float: left; */
+}
+
+.album__song .logo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.album__song .song_card {
+    margin-left: 20px;       
+    width:70%;  
+}
+
+.album__song .song_card .title {
+    font-weight: 900;
+    font-size: 1rem;
+    padding:5px 0;
+}
+
+.album__song .song_card .singer {
+    display: inline-block;
+    font-size: .8rem;
+    /* padding: 5px; */
+}
+.album__song .duration {
+    margin-right: 10px;
+    margin-left: auto;
+}
+.track_like {
+    /* background-color: red; */
+    /* flex: 1;  */
+    /* width: 100%; */
+    
+   
+}
+.track_like a {
+    display: inline-block;    
+    font-weight: 900;
+    width:24px;
+    height: auto;
+    
+}
+.track_like a:last-child{
+    margin-right: 20px;
+}
+
+.track_like i {
+    color: #000;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+/* ALBUM TRACK END */
+
+/* VIDEO STREAM */
+.album_video_stream {
+    width: 900px;
+    /* margin-top: 20px; */
+    margin: 20px auto 0 auto;   
+    color: #000;
+}
+
+/* subscribe section*/
+
+.subscribe {
+
+    width: 900px;
+    /* margin-top: 20px; */
+    margin: 20px auto 0 auto;   
+    color: #000;
+    border-top: .5px solid rgba(0,0,0,.1);
+    border-bottom: .5px solid rgba(0,0,0,.1);
+
+}
+
+.sub-wrapper {
+    width: 100%;
+    padding: 30px 0;
+    flex-direction: column;
+
+}
+
+.sub-wrapper h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem ;
+    letter-spacing: 1px;
+    padding-bottom: 2px;
+    border-bottom: 5px solid rgba(0,0,0,.1);
+}
+
+.sub-wrapper p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    padding-top: 10px;
+    /* width: 300px; */
+    white-space: pre-line;
+
+}
+.sub-wrapper a.subscribe-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    margin-top: 20px;
+    padding:17px 50px;
+    border-radius: 30px;
+    background-color: rgb(26, 159, 224);
+    
+}
+
+/* MORE ALBUM section */
+section.more-album {
+    width: 900px;
+    margin: 20px auto 40px auto;
+    
+}
+
+.more-album .m-a-more{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more-album .m-a-more h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: rgb(0,0,0);
+    letter-spacing: 1.3px;
+
+}
+.more-album .m-a-more a{
+    color: steelblue;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.more-album-grid {
+    margin-top: 20px;
+    display: grid;
+    /* background-color: rgba(0,0,0,.5); */
+    grid-template-columns: repeat(2,1fr);
+   row-gap: 20px;
+   column-gap: 30px;
+}
+
+.more-album-grid .more-a__card {
+    width: 100%;
+    height: 150px;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+    /* border:1px solid red;  */
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: top -150px right 0; 
+    padding-bottom: 20px;
+    
+}
+.more-album-grid .more-a__card:first-child {
+    background-image: url(/images/card-1024x1024.jpg);   
+
+}
+.more-album-grid .more-a__card:nth-child(2){
+    background-image: url(/images/card2-1024x1024.jpg);
+}
+
+.more-album-grid .more-a__card:nth-child(3){
+    background-image: url(/images/card3-1024x1024.jpg);
+}
+.more-album-grid .more-a__card:last-child{
+    background-image: url(/images/card4-1024x1024.jpg);
+}
+.more-album-grid .more-a__card h1,
+.more-album-grid .more-a__card h3 {
+    /* display: block; */
+    margin:0;
+    padding:0;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: var(--clr-white)
+
+}
+.more-album-grid .more-a__card h1 {
+    padding-bottom: 5px;
+}
+.more-album-grid .more-a__card h3{
+    font-weight: 400;
+    font-size: .8rem;    
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    font-family: 'Montserrat', sans-serif;
+    padding:30px 40px 30px 40px;    
+}
+
+.l-m__top ul > li, 
+.r-m__top ul > li {
+    padding-right: 10px;
+    font-size: .8rem;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+ul img {
+    width:18px;
+    display: block;
+    margin: 0;
+    padding:0;
+}
+.l-m__bottom, 
+.r-m__bottom {
+    margin-top:30px;
+}
+
+.l-m__bottom a{
+    font-size: .7rem;
+    letter-spacing: .5px;
+    padding-right: 12px;
+}
+.right_footer .r-m__bottom {
+    text-align: right;
+    
+}
+
+.right_footer .r-m__bottom a {
+    font-size: .8rem;
+    color:rgba(255,255,255,0.2);
+    line-height: .5px;
+    letter-spacing: 1.5px;
+}
